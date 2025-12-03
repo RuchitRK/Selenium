@@ -8,7 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 public class LocCSS {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.edge.driver", "C:\\\\RuchitRK\\\\Selenium stuffs\\\\edgedriver_win64\\\\msedgedriver.exe");
+		System.setProperty("webdriver.edge.driver", "C:\\RuchitRK\\Selenium stuffs\\edgedriver_win64\\msedgedriver.exe");
 		WebDriver driver1=new EdgeDriver();
 		driver1.manage().window().maximize();
 		driver1.get("https://www.facebook.com/");

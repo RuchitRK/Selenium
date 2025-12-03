@@ -78,7 +78,7 @@
 	<classpathentry kind="lib" path="C:/RuchitRK/Selenium stuffs/jar_combined/selenium-manager-4.38.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/RuchitRK/Selenium stuffs/jar_combined/selenium-os-4.38.0.jar"/>
 	<classpathentry kind="lib" path="C:/RuchitRK/Selenium stuffs/jar_combined/selenium-os-4.38.0-sources.jar"/>
-	<classpathentry kind="lib" path="C:/RuchitRK/Selenium stuffs/jar_combined/selenium-remote-driver-4.38.0.jar"/>
+	<classpathentry kind="lib" path="C:/RuchitRK/Selenium stuffs/jar_combined/selenium-remote-driver-4.38.0.jar" sourcepath="C:/RuchitRK/Selenium stuffs/jar_combined"/>
 	<classpathentry kind="lib" path="C:/RuchitRK/Selenium stuffs/jar_combined/selenium-remote-driver-4.38.0-sources.jar"/>
 	<classpathentry kind="lib" path="C:/RuchitRK/Selenium stuffs/jar_combined/selenium-safari-driver-4.38.0.jar"/>
 	<classpathentry kind="lib" path="C:/RuchitRK/Selenium stuffs/jar_combined/selenium-safari-driver-4.38.0-sources.jar"/>

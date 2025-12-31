@@ -15,6 +15,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.Test;
 
 public class DataDriven {
+	@SuppressWarnings("deprecation")
 	public String[][] input() throws InvalidFormatException, IOException {
 		String[][] data = null;
 		//1.FilePath
@@ -22,10 +23,11 @@ public class DataDriven {
 		//2. to make file
 		File file = new File(filePath);
 		//3. open a workbook
+		@SuppressWarnings("resource")
 		XSSFWorkbook workbook=new XSSFWorkbook(file);
 		//4. open a sheet
 		Sheet sheet = workbook.getSheet("Sheet1");
-		//5. tp check no. of rows
+		//5. to check no. of rows
 		int nrow = sheet.getPhysicalNumberOfRows();
 		System.out.println("Number of Rows: "+nrow);
 		data=new String[nrow][];

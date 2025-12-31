@@ -16,6 +16,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class KeyWordDriven {
+	@SuppressWarnings("deprecation")
 	@DataProvider(name="RK")
 	public Object[][] input() throws InvalidFormatException, IOException {
 		Object[][] data = null;
@@ -24,10 +25,11 @@ public class KeyWordDriven {
 		//2. to make file
 		File file = new File(filePath);
 		//3. open a workbook
+		@SuppressWarnings("resource")
 		XSSFWorkbook workbook=new XSSFWorkbook(file);
 		//4. open a sheet
 		Sheet sheet = workbook.getSheet("Sheet2");
-		//5. tp check no. of rows
+		//5. to check no. of rows
 		int nrow = sheet.getPhysicalNumberOfRows();
 		System.out.println("Number of Rows: "+nrow);
 		data=new String[nrow][];
@@ -52,6 +54,7 @@ public class KeyWordDriven {
 	WebDriver driver=null;
 	@Test(dataProvider = "RK")
 	public void test(String keyword) throws InvalidFormatException, IOException, InterruptedException {
+		@SuppressWarnings("unused")
 		Object[][] data=input();
 		System.setProperty("webdriver.edge.driver", "C:\\RuchitRK\\Selenium stuffs\\edgedriver_win64\\msedgedriver.exe");
 		if (keyword.equalsIgnoreCase("open browser")) {
